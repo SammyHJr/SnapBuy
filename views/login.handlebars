@@ -1,16 +1,21 @@
 <div class="login-container">
-    <form action="/login" method="post">
-        <h2>Login</h2>
-        <!-- Username input with placeholder -->
-        <input type="text" id="username" name="username" placeholder="Username" >
+  <form action="/login" method="post">
+    <h2>Login</h2>
+    <!-- Username input with placeholder -->
+    <input type="text" id="username" name="username" placeholder="Username" />
 
-        <!-- Password input with placeholder -->
-        <input type="password" id="password" name="password" placeholder="Password" >
+    <!-- Password input with placeholder -->
+    <input
+      type="password"
+      id="password"
+      name="password"
+      placeholder="Password"
+    />
 
-        <!-- Login button -->
-        <button type="submit">Login</button>
-    </form>
+    <!-- Login button -->
+    <button type="submit" class="login-btn">Login</button>
+  </form>
 
-    <!-- Signup button (You can redirect this to a signup page) -->
-    <button onclick="window.location.href='/signup'">Signup</button>
+  <!-- Signup button (You can redirect this to a signup page) -->
+  <button onclick="window.location.href='/signup'">Signup</button>
 </div>

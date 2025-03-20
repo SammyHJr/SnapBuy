@@ -1,0 +1,16 @@
+/* Ensures the main content takes up available space */
+.content {
+    max-width: 1200px; /* Sets a readable max width */
+    margin: 100px auto 20px; /* Pushes content below the fixed header */
+    padding: 20px;
+    min-height: calc(100vh - 160px); /* Ensures content pushes footer down */
+}
+
+/* Makes sure the content does not shrink too much on smaller screens */
+@media screen and (max-width: 768px) {
+    .content {
+        margin: 120px auto 20px;
+        padding: 15px;
+        width: 90%;
+    }
+}

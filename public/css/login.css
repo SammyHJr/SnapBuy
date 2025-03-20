@@ -1,38 +1,83 @@
+/* Centers the login container */
 .login-container {
-    font-family: sans-serif; /* Change font to sans-serif */
+    font-family: sans-serif;
     background-color: white;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    width: 220px;
-    margin-right: 0px; /* Add some space from the right edge */
+    width: 300px; /* Adjusted width */
+    text-align: center; /* Center align text */
+    margin: 50px auto; /* Centers it on the page */
     position: relative;
-    align-content: center;
-    height: 250px;
 }
 
+/* Input Fields */
 .login-container input[type="text"],
 .login-container input[type="password"] {
-    width: 100%;
-    padding: 10px;
+    width: 100%; /* Full width */
+    padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 200px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
 }
 
+/* Highlight input on focus */
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: #5E17EB;
+    outline: none;
+    box-shadow: 0 0 5px rgba(94, 23, 235, 0.3);
+}
+
+/* Login Button */
 .login-container button {
     width: 100%;
-    padding: 10px;
-    background-color: #5E17EB; /* Custom button background color */
+    padding: 12px;
+    background-color: #5E17EB;
     color: white;
+    font-size: 16px;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 10px; /* Space between buttons */
-    width: 220px;
-
+    transition: background-color 0.3s ease, transform 0.1s ease;
 }
+
+/* Add more space between buttons */
+.login-container button.login-btn {
+    margin-bottom: 20px; /* Increased space between Login and Sign Up buttons */
+}
+
+/* Hover & Active Effect */
 .login-container button:hover {
-    background-color: #4c12bd; /* Slightly darker on hover */
+    background-color: #4c12bd;
+}
+
+.login-container button:active {
+    transform: scale(0.98);
+}
+
+/* Sign Up Link */
+.signup-link {
+    display: block;
+    margin-top: 10px; /* Adjust space from the login button */
+    font-size: 14px;
+    color: #5E17EB;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.signup-link:hover {
+    color: #4c12bd;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 400px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
 }
