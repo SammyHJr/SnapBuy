@@ -1,10 +1,84 @@
-.header{
-    background-color: #E9EDF7;
-    top: 0px;
-    margin: 5px;
-    padding: 10px;
-    width:100%;
-    height: 100px;
-    border-radius: 10px;
-    border: 5px solid #363A69;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Container */
+.header {
+    background-color: #E9EDF7; /* Light blue-gray background */
+    width: 100%;
+    height: 80px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed; /* Keeps it at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures header stays above other content */
+}
+
+/* Logo Styling */
+.Banner {
+    display: flex;
+    align-items: center;
+}
+
+.SnapBuyLogo {
+    width: 200px; /* Adjust size as needed */
+    height: 200px;
+}
+
+/* Navigation Links */
+.Section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Space between links */
+}
+
+/* Styling for links */
+.Section1 a {
+    color: #ffffff;
+    font-family: 'Lucida Sans';
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #8C5AE6; /* Lighter shade of #5E17EB */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.Section1 a:hover {
+    background-color: #5E17EB; /* Darker hover effect */
+    color: white;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .Banner {
+        margin-bottom: 10px;
+    }
+
+    .Section1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .Section1 a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
 }

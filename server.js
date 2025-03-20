@@ -10,11 +10,17 @@ const app = express();
 const path = require('path');
 
 // Static Files Middleware
-app.use(express.static('public'));
 
 // View Engine Configuration for Handlebars
 const exphbs = require('express-handlebars');
-app.engine('handlebars', exphbs.engine());
+// Set up Handlebars
+app.engine('handlebars', exphbs.engine({
+    defaultLayout: 'main',
+    partialsDir: 'views/partials/' // Register the partials folder
+}));
+app.use(express.static('public'));
+
+
 app.set('view engine', 'handlebars');
 app.set('views', './views');
 

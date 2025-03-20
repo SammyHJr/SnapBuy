@@ -1,0 +1,19 @@
+<div class="header">
+  <div class="Banner">
+    <img src="/img/SnapBuyLogo.png" alt="SnapBuy Logo" class="SnapBuyLogo" />
+  </div>
+
+  <div class="Section1">
+    <a href="/">Home</a>
+    <a href="/AboutUs">About us</a>
+    <a href="/ContactUs">Contact Us</a>
+    <a href="/products">List</a>
+
+    {{#if user}}
+      <a href="/secret">SECRET</a>
+      <a href="/logout">Welcome, {{user.userName}}! Logout</a>
+    {{else}}
+      <a href="/login">Login</a>
+    {{/if}}
+  </div>
+</div>
