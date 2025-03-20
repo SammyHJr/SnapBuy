@@ -36,25 +36,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px; /* Space between links */
+    gap: 50px; /* Space between links */
 }
 
 /* Styling for links */
 .Section1 a {
     color: #ffffff;
-    font-family: 'Lucida Sans';
+    font-family: 'Calibri';
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #8C5AE6; /* Lighter shade of #5E17EB */
+    background-color: #5E17EB; /* Darker hover effect */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Hover effect */
 .Section1 a:hover {
-    background-color: #5E17EB; /* Darker hover effect */
+    background-color: #8C5AE6; /* Lighter shade of #5E17EB */
     color: white;
 }
 
