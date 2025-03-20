@@ -1,0 +1,19 @@
+
+.Section1 a {
+    position: relative;
+    top: -175px;
+    left: 1000px;
+    gap: 50px;
+    background-color: #5E17EB; /* Light gray background */
+    padding: 10px 15px; /* Add some padding inside the link */
+    margin-right: 50px; /* Add spacing between links */
+    border-radius: 5px; /* Rounds the corners of the background */
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Sets the text color */
+    display: inline-block; /* Ensues the link behaves like a block-level element */
+    font-family:sans-serif;
+}
+
+.Section1 a:hover{
+    background-color: #4c12bd; /* Slightly darker on hover */
+}

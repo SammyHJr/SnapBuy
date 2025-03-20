@@ -1,0 +1,157 @@
+.productContent {
+    border: 5px solid #363A69; /* Border around the entire product area */
+    width: 100vw; /* Full viewport width */
+    height: auto; /* Height will adjust based on the content */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #E9EDF7; /* Background color for the outer container */
+    padding: 20px; /* Padding inside the container */
+    box-sizing: border-box; /* Ensure padding is included in width/height calculation */
+}
+
+/* Inner container that holds the individual products */
+.productPlacement {
+    display: flex; /* Use flexbox for layout */
+    background-color: white;
+    border-radius: 10px;
+    border: 5px solid #363A69; /* Border around the entire product area */
+    flex-wrap: wrap; /* Allow products to wrap to the next line if necessary */
+    gap: 20px; /* Space between products */
+    margin: 0; /* No margin needed inside the .productContent */
+    padding: 10px; /* Optional padding inside */
+    box-sizing: border-box; /* Ensures padding and border are included in width/height */
+}
+
+ /* Initially hide the product details */
+ .product-details {
+    display: none;
+
+
+}
+
+/* Show the details when the user hovers over the product item */
+.product-item:hover .product-details {
+    display: block;
+    padding-top: 10px;
+}
+
+/* Optional: Add some styling for the product item and details */
+.product-item {
+    padding: 10px;
+    border: 3px solid #363A69;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.product-item-full {
+    font-family: sans-serif;    
+    font-size: 25px;
+
+}
+
+.product-item:hover {
+    background-color: #f9f9f9;
+}
+
+.EDbutton a{
+    font-family: sans-serif;
+    font-size: 20px;
+    border-color: solid 3px black;
+}
+.EDbutton button {
+font-family: sans-serif;
+font-size: 20px;
+color: white;
+background-color: #5E17EB;
+border-radius: 5px;
+}
+
+.EDbutton button:hover{
+    background-color: #4c12bd;   /* Darker green on hover */
+}
+
+.create-button {
+    background-color: #5E17EB; /* Light gray background */
+    color: white;                  /* White text color */
+    padding: 10px 20px;            /* Padding to make the button larger */
+    border: none;                  /* Remove the default button border */
+    border-radius: 5px;            /* Rounded corners */
+    cursor: pointer;               /* Change cursor to pointer on hover */
+    font-size: 16px;               /* Font size to make it more readable */
+    margin-bottom: 20px;           /* Spacing between button and product list */
+    position: relative;
+    top: -10px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.create-button:hover {
+    background-color: #4c12bd;   /* Darker green on hover */
+}
+
+
+.product-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.product-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.product-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: darkgreen;
+}
+
+.editCreate-Structure label{
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 20px;
+    
+}
+
+.editCreate-Structure input{
+position: relative;
+display: grid;
+align-items: end;
+width: 200px;
+height: 20px;
+}
+
+.editCreate-Structure button{
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: #5E17EB;
+    border-radius: 5px;
+}
+
+.editCreate-Structure button:hover{
+    background-color:#4c12bd
+}
+

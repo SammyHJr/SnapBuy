@@ -1,0 +1,18 @@
+<h1>Product List</h1>
+
+<!-- Create Button -->
+{{#if user}} <!-- Check if user exists -->
+
+<a href="/create" class="create-button">Create New Product</a><br>
+{{/if}}
+
+{{#each products}}
+<div class="product-item">
+
+    <a href="/products/{{id}}">{{product}}</a><br>
+    <strong>Category:</strong> {{category}} <br>
+    <strong>Price:</strong> ${{price}} <br>
+
+</div>
+<hr>
+{{/each}}

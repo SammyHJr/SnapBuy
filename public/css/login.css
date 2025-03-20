@@ -1,0 +1,38 @@
+.login-container {
+    font-family: sans-serif; /* Change font to sans-serif */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 220px;
+    margin-right: 0px; /* Add some space from the right edge */
+    position: relative;
+    align-content: center;
+    height: 250px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5E17EB; /* Custom button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Space between buttons */
+    width: 220px;
+
+}
+.login-container button:hover {
+    background-color: #4c12bd; /* Slightly darker on hover */
+}

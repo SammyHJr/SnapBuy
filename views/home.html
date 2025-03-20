@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SnapBuy - for you by us</title>
+    <link rel="stylesheet" href="../public/css/header.css">
+    <link rel="stylesheet" href="../public/css/banner.css">
+    <link rel="stylesheet" href="../public/css/SnapBuyLogo.css">
+    <link rel="stylesheet" href="../public/css/Section1.css">
+    <link rel="stylesheet" href="../public/css/Sidebar.css">
+    <link rel="stylesheet" href="../public/css/login.css">
+    <link rel="stylesheet" href="../public/css/productContent.css">
+    <link rel="stylesheet" href="../public/css/TwoContent.css">
+    <link rel="stylesheet" href="../public/css/productPlacement.css">
+
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="Banner">
+        <img src="../public/img/SnapBuyLogo.png" alt="SnapBuyLogo" class="SnapBuyLogo">
+        <div class="Section1">
+            <a href="/home">Home</a>
+            <a href="/about">About us</a>
+            <a href="/contact">Contact</a>
+            <a href="/list">List</a>
+        </div>
+
+        <div class="TwoContent">
+            <div class="login-container">
+                <form action="/login" method="POST">
+                    <h2>Login</h2>
+                    <!-- Username input with placeholder -->
+                    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+
+                    <!-- Password input with placeholder -->
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+                    <!-- Login button -->
+                    <button type="submit">Login</button>
+                </form>
+
+                <!-- Signup button (You can redirect this to a signup page) -->
+                <button onclick="window.location.href='/signup'">Signup</button>
+            </div>
+        </div>
+
+        <div class="productContent">
+            <div class="productPlacement">
+            </div>
+        </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.TwoContent {
+    display: flex;
+    /* Enable flexbox */
+    align-items: top;
+    /* Vertically align items */
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    top: -140px;
+    left: -0;
+
+}

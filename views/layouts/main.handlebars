@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LOCAL HOST SnapBuy - for you by us </title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/banner.css">
+    <link rel="stylesheet" href="/css/SnapBuyLogo.css">
+    <link rel="stylesheet" href="/css/Section1.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/productContent.css">
+    <link rel="stylesheet" href="/css/TwoContent.css">
+    <link rel="stylesheet" href="/css/productPlacement.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/AboutUs.css">
+    <link rel="stylesheet" href="/css/ContactUs.css">
+    <link rel="stylesheet" href="/css/signup.css">
+
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="Banner">
+        <img src="/img/SnapBuyLogo.png" alt="SnapBuyLogo" class="SnapBuyLogo">
+        <div class="Section1">
+            <a href="/">Home</a>
+            <a href="/AboutUs">About us</a>
+            <a href="/ContactUs">Contact Us</a>
+            <a href="/products">List</a>
+
+            {{#if user}} <!-- Check if user exists -->
+            <a href="/secret">SECRET</a>
+
+            <a href="/logout">Welcome, {{user.userName}}! Logout</a> <!-- Display logout link if user is logged in -->
+
+            {{else}}
+            <a href="/login">Login</a> <!-- Display login link if user is not logged in -->
+            {{/if}}
+
+        </div>
+
+        <div class="TwoContent">
+
+
+
+            <div class="productContent">
+                <div class="productPlacement">
+                    <div class="body">
+                        {{{body}}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
