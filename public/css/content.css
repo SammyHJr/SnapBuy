@@ -1,13 +1,91 @@
-/* Ensures the main content takes up available space */
+/* Overall content wrapper */
 .content {
-    max-width: 1200px; /* Sets a readable max width */
-    margin: 100px auto 20px; /* Pushes content below the fixed header */
+    max-width: 1200px;
+    margin: 100px auto 20px;
     padding: 20px;
-    /*min-height: calc(100vh - 160px);  Ensures content pushes footer down */
 }
 
-/* Makes sure the content does not shrink too much on smaller screens */
+/* Grid layout for text and slideshow */
+.home-grid {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Left: Text */
+.home-description {
+    flex: 1;
+    min-width: 300px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.home-description h1 {
+    font-size: 36px;
+    color: #5E17EB;
+    margin-bottom: 10px;
+}
+
+.home-description h2 {
+    font-size: 24px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.home-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Right: Slideshow */
+.home-slideshow {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Slideshow styling */
+.slideshow-container {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Responsive behavior */
 @media screen and (max-width: 768px) {
+    .home-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .home-description,
+    .home-slideshow {
+        width: 100%;
+    }
+
     .content {
         margin: 120px auto 20px;
         padding: 15px;

@@ -1,16 +1,57 @@
-<div class = "home">
-    <h1>WELCOME TO SNAPBUY</h1>
-    <h2>The Future of Asian E-commerce</h2>
-    <div>
-        <br>
-        At <strong> SnapBuy </strong>, we’re revolutionizing the way you shop and do business. Whether you're looking for home equipment,
-        hobby gear, or anything else an e-commerce platform has to offer, we’ve got it all. Our platform connects buyers
-        directly with a wide range of sellers, providing the best products for every need. <br> <br>
+<main class="content">
+  <div class="home-grid">
+    <!-- Left: Description -->
+    <div class="home-description">
+      <h1>WELCOME TO SNAPBUY</h1>
+      <h2>The Future of Asian E-commerce</h2>
 
-        But that’s not <strong> ALL</strong>! SnapBuy goes beyond just shopping. We empower you to not only choose products but also to
-        connect with individual sellers and factories. Want to start your own online store? SnapBuy makes it easy by
-        giving you the tools to establish your own e-commerce shop directly on our platform. <br> <br>
+      <p>
+        At
+        <strong>SnapBuy</strong>, we’re revolutionizing the way you shop and do
+        business. Whether you're looking for home equipment, hobby gear, or
+        anything else an e-commerce platform has to offer, we’ve got it all. Our
+        platform connects buyers directly with a wide range of sellers,
+        providing the best products for every need.
+      </p>
 
-       <strong> Join us and explore the future of e-commerce today!</strong>
+      <p>
+        But that’s not
+        <strong>ALL</strong>! SnapBuy goes beyond just shopping. We empower you
+        to not only choose products but also to connect with individual sellers
+        and factories. Want to start your own online store? SnapBuy makes it
+        easy by giving you the tools to establish your own e-commerce shop
+        directly on our platform.
+      </p>
+
+      <p><strong>Join us and explore the future of e-commerce today!</strong></p>
     </div>
-</div>
+
+    <!-- Right: Slideshow -->
+    <div class="home-slideshow">
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <img src="/img/slideshow/product.png" alt="Slide 1" />
+        </div>
+        <div class="slide fade">
+          <img src="/img/slideshow/package.png" alt="Slide 2" />
+        </div>
+        <div class="slide fade">
+          <img src="/img/slideshow/ship.png" alt="Slide 3" />
+        </div>
+        <div class="slide fade">
+          <img src="/img/slideshow/deliver.png" alt="Slide 4" />
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Slideshow Script -->
+<script>
+  window.addEventListener("DOMContentLoaded", () => { let slideIndex = 0;
+  showSlides(); function showSlides() { const slides =
+  document.getElementsByClassName("slide"); for (let i = 0; i < slides.length;
+  i++) { slides[i].style.display = "none"; } slideIndex++; if (slideIndex >
+  slides.length) {slideIndex = 1} slides[slideIndex - 1].style.display =
+  "block"; setTimeout(showSlides, 3000); } });
+</script>
